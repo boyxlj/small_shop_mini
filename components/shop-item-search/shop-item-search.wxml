@@ -1,0 +1,10 @@
+<view class='box'>
+    <view class='shop' >
+      <view bindtap="shopdetail" data-detailId = "{{item.detailId}}" class="shopItem" wx:for="{{shopData}}" wx:key="detailId">
+        <image show-menu-by-longpress='1' webp  src="{{item.titleImg}}"></image>
+         <view class="title">{{item.title}}-{{item.descs}}</view> 
+        <!--<view class="title">{{item.title}}</view>-->
+        <view class="price"><text>￥{{item.price}}</text><text>￥{{item.prePrice}}</text> </view>
+      </view>
+  </view>
+</view>
