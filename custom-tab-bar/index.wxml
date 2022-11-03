@@ -1,7 +1,7 @@
 <van-tabbar
 style="position: relative; z-index: 888"
   active="{{ value }}"
-  active-color="red"
+  active-color="#cf0a2c"
   inactive-color="#000"
   bind:change="onChange"
 >

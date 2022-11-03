@@ -22,7 +22,7 @@
   justify-content: space-between;
 }
 .box .item .logos .success {
-  color: red;
+  color: #cf0a2c;
 }
 .box .shopList {
   height: 200rpx;
@@ -54,6 +54,14 @@
   -webkit-box-orient: vertical;
   padding-bottom: 8rpx;
 }
+.box .shopList .right .title .tag {
+  background: #cf0a2c;
+  padding: 0 6rpx;
+  color: #fff;
+  font-size: 24rpx;
+  border-radius: 8rpx;
+  margin-right: 7rpx;
+}
 .box .shopList .right .price {
   display: flex;
   justify-content: space-between;
@@ -61,7 +69,7 @@
 }
 .box .shopList .right .price text:first-child {
   font-size: 40rpx;
-  color: red;
+  color: #cf0a2c;
 }
 .box .btns {
   display: flex;

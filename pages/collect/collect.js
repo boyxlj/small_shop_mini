@@ -27,6 +27,7 @@ Page({
     Dialog.confirm({
       title: '温馨提示',
       message: '您确定要取消收藏当前商品吗？',
+      confirmButtonColor:"#cf0a2c"
     })
       .then(async () => {
           const {data:res} =await removeCollectByCollectId(collectId)

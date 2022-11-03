@@ -29,6 +29,7 @@ tiaoProfile(){
     Dialog.confirm({
       title: '温馨提示',
       message: '您确定要退出登录吗？',
+      confirmButtonColor:"#cf0a2c",
     })
       .then(() => {
         wx.removeStorageSync('userInfo')

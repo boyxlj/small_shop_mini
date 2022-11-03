@@ -8,6 +8,7 @@
     <view bindtap="detail" data-detailId="{{item.detailId}}" wx:if="{{shopList.length}}" class="item" wx:for="{{shopList}}" wx:key="detailId">
       <image src="{{item.titleImg}}" alt=""/>
       <text>{{item.title}}</text>
+      <view wx:if="item.tag" class="tag">{{item.tag}}</view>
     </view>
     <view class="empty" wx:if="{{!shopList.length}}">
       <van-empty image="error" description="暂无数据" />

@@ -5,12 +5,15 @@
         <view class="item" >
           <view class="tops">
             <view class="tops_left"><van-checkbox checked-color="#ff0000" value="{{ item.checked }}" data-carId="{{item.carId}}" bind:change="onChangeCheck"></van-checkbox></view>
-            <view class="right"><van-tag size="large" round type="danger" size="large">微商城自营店</van-tag></view>
+            <view class="right"><van-tag size="large" round type="danger" size="large" color="#cf0a2c">微商城自营店</van-tag></view>
           </view>
           <view class="center">
             <image  bindtap="shopDetail" data-detailId="{{item.detailId}}" src="{{item.titleImg}}"></image>
             <view class="center_right">
-              <view  bindtap="shopDetail" data-detailId="{{item.detailId}}" class='title'>{{item.title}}</view>
+              <view  bindtap="shopDetail" data-detailId="{{item.detailId}}" class='title'>
+                <text wx:if="{{item.tag}}" class="tag">{{item.tag}}</text>
+                {{item.title}}
+              </view>
               <view  bindtap="shopDetail" data-detailId="{{item.detailId}}" class='descs'> {{item.descs}}</view>
               <view class='price'>
                 <view>
@@ -47,7 +50,7 @@
       <view>已选{{num}}件</view>
        <view>合计:<text>￥{{totalPrice}}</text></view>
     </view>
-    <van-button icon="balance-pay" type="danger" bind:click="submitOrder" round>去结算</van-button>
+    <van-button icon="balance-pay" type="danger" bind:click="submitOrder" round color="#cf0a2c">去结算</van-button>
   </view>
     
 </view>

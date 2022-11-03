@@ -16,7 +16,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 18px 15px;
+  padding: 36rpx 31rpx;
   box-sizing: border-box;
   margin-bottom: 20rpx;
 }
@@ -37,8 +37,14 @@
   overflow: hidden;
   height: 95rpx;
   font-size: 28rpx;
-  display: flex;
-  justify-content: center;
+}
+.box .shop .shopItem .title .tag {
+  background: #cf0a2c;
+  padding: 0 6rpx;
+  color: #fff;
+  font-size: 24rpx;
+  border-radius: 8rpx;
+  margin-right: 7rpx;
 }
 .box .shop .shopItem .price {
   display: flex;
@@ -47,10 +53,10 @@
   margin-top: 20rpx;
   align-items: center;
 }
-.box .shop .shopItem .price text:first-child {
-  color: red;
-}
-.box .shop .shopItem .price text:last-child {
+.box .shop .shopItem .price .nowPrice {
   text-decoration: line-through;
   font-size: 26rpx;
+}
+.box .shop .shopItem .price .prePrice {
+  color: #cf0a2c;
 }

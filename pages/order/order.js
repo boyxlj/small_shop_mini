@@ -22,6 +22,7 @@ Page({
     Dialog.confirm({
       title: '温馨提示',
       message: '确认要删除当前订单吗？',
+      confirmButtonColor:"#cf0a2c"
     })
       .then(() => {
        this.deleteOrders(orderNumber)

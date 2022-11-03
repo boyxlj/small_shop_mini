@@ -6,6 +6,6 @@
     <shop-item-search   shopData="{{shopData}}"></shop-item-search>
   </view>
   <view class="empty"  wx:if="{{showEmpty}}">
-    <van-empty  image="search" description="没有查询到相关内容" />
+    <van-empty  image="search" description="没有查询到相关商品" />
   </view>
 </view>

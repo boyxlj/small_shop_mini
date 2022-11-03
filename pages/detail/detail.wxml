@@ -38,11 +38,11 @@
       <van-goods-action-icon icon="cart-o" text="购物车" bindtap="tiaoCar" />
       <van-goods-action-icon icon-class="{{isCollect?'collectIcon':''}}" icon="{{isCollect?'star':'star-o'}}" text="{{isCollect?'已收藏':'收藏'}}" bindtap="clickCollect" />
       <!--<van-goods-action-icon wx:if="{{isCollect}}" icon="star" text="收藏" bindtap="clickCollect" />-->
-      <van-goods-action-button  text="加入购物车" bindtap="addCar" type="danger" />
+      <van-goods-action-button  text="加入购物车" bindtap="addCar" type="danger" color='#cf0a2c' />
       <!--<van-goods-action-button text="立即购买" bindtap="goPay" />-->
     </van-goods-action>
     <view class="tip like">--猜你喜欢--</view>
     <shop-item-search shopData="{{likeData}}"></shop-item-search>
   </view>
-  <van-dialog style="position: relative; z-index: 999999;" id="van-dialog" />
+  <van-dialog style="position: relative; z-index: 999999;"  id="van-dialog" />
 </view>

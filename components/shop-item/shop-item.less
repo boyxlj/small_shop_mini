@@ -36,7 +36,7 @@
       display: flex;
       flex-direction: column;
       align-items: center;
-      padding: 32rpx  30rpx;
+      padding: 32rpx  31rpx;
       box-sizing: border-box;
       margin-bottom: 20rpx;
       image{
@@ -56,6 +56,14 @@
         overflow: hidden;
         height:95rpx;
         font-size: 28rpx;
+        .tag{
+          background: #cf0a2c;
+          padding: 0 6rpx;
+          color: #fff;
+          font-size: 24rpx;
+          border-radius: 8rpx;
+          margin-right: 7rpx;
+      }
       }
       .price{
         display: flex;
@@ -63,16 +71,14 @@
         justify-content: space-between;
         margin-top: 20rpx;
         align-items: center;
-        text{
-          &:first-child{
-            color: red;
-          }
-          &:last-child{
+       .nowPrice{
             text-decoration: line-through;
             font-size: 26rpx;
           }
+          .prePrice{
+            color: #cf0a2c;
+          }
         }
-      }
       
     }
 

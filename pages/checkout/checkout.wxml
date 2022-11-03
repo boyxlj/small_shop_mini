@@ -31,7 +31,7 @@
       </view>
       <view class="shop">
         <view class="top">
-          <van-tag type="danger" round size="large">微商城自营店</van-tag>
+          <van-tag type="danger" round size="large" color='#cf0a2c'>微商城自营店</van-tag>
         </view>
         <view class="shopList" bindtap="tiaoDetail" data-detailId="{{item.detailId}}" wx:for="{{orderList}}" wx:key="detailId">
           <image src="{{item.titleImg}}"></image>
@@ -86,7 +86,7 @@
         <view class="total"><text>合计:</text><text>￥ {{totalPrice}}</text></view>
       </view>
       <view class="right">
-        <van-button bind:click="submitOrder" round type="danger">
+        <van-button bind:click="submitOrder" round type="danger" color='#cf0a2c'>
           提交订单
         </van-button>
       </view>

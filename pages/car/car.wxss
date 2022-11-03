@@ -2,7 +2,7 @@
   width: 100%;
   height: 100%;
   min-height: 100vh;
-  background-color: #f0f0f0;
+  background-color: #f1f3f5;
   overflow: hidden;
 }
 .car .content {
@@ -43,6 +43,14 @@
   text-overflow: ellipsis;
   white-space: nowrap;
 }
+.car .content .item .center .center_right .title .tag {
+  background: #cf0a2c;
+  padding: 0 6rpx;
+  color: #fff;
+  font-size: 24rpx;
+  border-radius: 8rpx;
+  margin-right: 7rpx;
+}
 .car .content .item .center .center_right .descs {
   width: 100%;
   overflow: hidden;
@@ -62,7 +70,7 @@
   margin-top: 14rpx;
   width: 100%;
   align-items: center;
-  color: red;
+  color: #cf0a2c;
   flex-wrap: nowrap;
   display: flex;
   justify-content: space-between;
@@ -72,7 +80,7 @@
 }
 .delete {
   height: 100%;
-  background-color: red;
+  background-color: #cf0a2c;
   width: 150rpx;
   margin-left: 10rpx;
   display: flex;
@@ -136,6 +144,6 @@
   top: -13rpx;
 }
 .haha .right .right_top view:last-child text {
-  color: red;
+  color: #cf0a2c;
   font-size: 40rpx;
 }

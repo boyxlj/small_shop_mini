@@ -59,11 +59,11 @@ Page({
     const {data:res} = await setOrderState(this.data.orderNumber,"3")
     setTimeout(()=>{
       wx.hideLoading()
-      Dialog.confirm({
+      Dialog.alert({
         title: '支付结果',
         message: '恭喜您支付成功',
-        cancelButtonText:"返回购物车",
-        confirmButtonText:"查看订单"
+        confirmButtonText:"查看订单",
+        confirmButtonColor:"#cf0a2c"
       })
         .then(() => {
           wx.redirectTo({
@@ -75,7 +75,7 @@ Page({
             url: '/pages/car/car',
           })
         });
-    },4000)
+    },3000)
 
   },
 
