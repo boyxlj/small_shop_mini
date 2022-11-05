@@ -34,11 +34,11 @@
   font-size: 33rpx;
   color: #FFF;
 }
-.detail .price .left text:first-child {
+.detail .price .left .nowPrice {
   font-size: 50rpx;
   margin-left: 30rpx;
 }
-.detail .price .left text:last-child {
+.detail .price .left .prePrice {
   margin-left: 45rpx;
   text-decoration: line-through;
 }
@@ -129,4 +129,12 @@
 }
 .collectIcon {
   color: orange;
+}
+.tag {
+  background: #cf0a2c;
+  padding: 0 6rpx;
+  color: #fff;
+  font-size: 24rpx;
+  border-radius: 8rpx;
+  margin-right: 7rpx;
 }

@@ -96,7 +96,7 @@
 }
 .likes {
   padding-bottom: 140rpx;
-  margin-top: 80rpx;
+  margin-top: 100rpx;
 }
 .likes .tip {
   width: 100%;

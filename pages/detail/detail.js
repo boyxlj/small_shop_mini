@@ -30,6 +30,7 @@ Page({
       detailDesc: "",
       price: "",
       prePrice: "",
+      tag: "",
     },
   },
   //点击客服
@@ -143,6 +144,7 @@ Page({
         detailDesc: res.data[0].detailDesc,
         price: res.data[0].price,
         prePrice: res.data[0].prePrice,
+        tag: res.data[0].tag,
       },
     });
   },

@@ -1,6 +1,7 @@
 <view class="me">
   <view class="top-box">
-    <view class="tips" bindtap="tiaoProfile">个人中心</view>
+    <view class="tips" bindtap="tiaoProfile">关于微商城</view>
+    <!-- <view class="tips" bindtap="tiaoProfile">个人中心</view> -->
     <view class="login"  wx:if="{{loginSuccess}}">
       <view class="left">
         <image src="{{userImg}}" alt=""/>

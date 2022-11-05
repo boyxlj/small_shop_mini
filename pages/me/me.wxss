@@ -148,12 +148,12 @@
   color: transparent;
 }
 .me .bottom .likes {
-  margin-top: 80rpx;
+  margin: 0rpx 0 35rpx 0;
 }
 .me .bottom .likes .tip {
   width: 100%;
   text-align: center;
-  margin: 8rpx 0 25rpx;
+  margin-bottom: 35rpx;
   background-image: linear-gradient(to right bottom, #f12121, #e434db, black, orange);
   -webkit-background-clip: text;
   color: transparent;

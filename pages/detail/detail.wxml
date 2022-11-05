@@ -6,8 +6,8 @@
   </swiper>
   <view class="price">
     <view class="left">
-      <text>￥{{shopInfo.price}}</text>
-      <text>￥{{shopInfo.prePrice}}</text>
+      <text class="nowPrice">￥{{shopInfo.price}}</text>
+      <text wx:if="{{shopInfo.prePrice}}" class="prePrice">￥{{shopInfo.prePrice}}</text>
     </view>
     <view bindtap="pintuan" class="right">
       <text >拼团更优惠</text>
@@ -16,7 +16,7 @@
   <view class="info">
     <view class="desc1">
       <view class="ziying">微商城自营</view>
-      <view class="title">{{shopInfo.title}}/{{shopInfo.descs}}</view>
+      <view class="title"><text wx:if="{{shopInfo.tag}}" class="tag">{{shopInfo.tag}}</text>{{shopInfo.title}}/{{shopInfo.descs}}</view>
       <view class="select">
         <view>
           <van-icon class="icons" name="back-top" />推荐
@@ -31,15 +31,13 @@
       </view>
     </view>
     <view class="tip">--商品详情--</view>
-    <view class="detailDesc">{{shopInfo.detailDesc}}</view>
+    <view class="detailDesc"><text wx:if="{{shopInfo.tag}}" class="tag">{{shopInfo.tag}}</text>{{shopInfo.detailDesc}}</view>
     <view class="bottom"></view>
     <van-goods-action>
       <van-goods-action-icon open-type="contact" icon="chat-o" text="客服" />
       <van-goods-action-icon icon="cart-o" text="购物车" bindtap="tiaoCar" />
       <van-goods-action-icon icon-class="{{isCollect?'collectIcon':''}}" icon="{{isCollect?'star':'star-o'}}" text="{{isCollect?'已收藏':'收藏'}}" bindtap="clickCollect" />
-      <!--<van-goods-action-icon wx:if="{{isCollect}}" icon="star" text="收藏" bindtap="clickCollect" />-->
       <van-goods-action-button  text="加入购物车" bindtap="addCar" type="danger" color='#cf0a2c' />
-      <!--<van-goods-action-button text="立即购买" bindtap="goPay" />-->
     </van-goods-action>
     <view class="tip like">--猜你喜欢--</view>
     <shop-item-search shopData="{{likeData}}"></shop-item-search>

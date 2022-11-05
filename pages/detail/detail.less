@@ -31,15 +31,13 @@
       align-items: center;
       font-size: 33rpx;
       color: #FFF;
-      text{
-        &:first-child{
-          font-size: 50rpx;
-          margin-left: 30rpx;
-        }
-        &:last-child{
-          margin-left: 45rpx;
+      .nowPrice{
+        font-size: 50rpx;
+        margin-left: 30rpx;
+      }
+      .prePrice{
+        margin-left: 45rpx;
           text-decoration: line-through;
-        }
       }
     }
     .right{
@@ -82,6 +80,7 @@
       -webkit-line-clamp: 2; /* 这里是超出几行省略 */
       overflow: hidden;
       margin: 15rpx 0;
+    
     }
     .select{
       width: 100%;
@@ -135,4 +134,13 @@
 
 .collectIcon{
   color: orange;
+}
+
+.tag{
+  background: #cf0a2c;
+  padding: 0 6rpx;
+  color: #fff;
+  font-size: 24rpx;
+  border-radius: 8rpx;
+  margin-right: 7rpx;
 }

@@ -4,10 +4,12 @@
   min-height: 100vh;
   background-color: #f1f3f5;
   overflow: hidden;
+
   .content {
     width: 100%;
     padding: 0 20rpx;
     box-sizing: border-box;
+
     // padding-bottom: 210rpx;
     .item {
       width: 100%;
@@ -18,28 +20,33 @@
       border-radius: 20rpx;
       margin-top: 30rpx;
 
-      .tops{
+      .tops {
         display: flex;
         padding: 20rpx;
       }
-      .center{
+
+      .center {
         display: flex;
         width: 100%;
         padding: 0 30rpx;
-        image{
+
+        image {
           width: 200rpx;
           height: 200rpx;
         }
-        .center_right{
+
+        .center_right {
           width: 58%;
           margin-left: 10rpx;
-          .title{
+
+          .title {
             width: 100%;
             padding: 8rpx 0rpx;
             overflow: hidden;
             text-overflow: ellipsis;
             white-space: nowrap;
-            .tag{
+
+            .tag {
               background: #cf0a2c;
               padding: 0 6rpx;
               color: #fff;
@@ -48,7 +55,8 @@
               margin-right: 7rpx;
             }
           }
-          .descs{
+
+          .descs {
             width: 100%;
             overflow: hidden;
             text-overflow: ellipsis;
@@ -60,31 +68,34 @@
             -moz-box-orient: vertical;
             word-wrap: break-word;
             word-break: break-all;
-            white-space: normal;  
-            padding: 8rpx 0; 
+            white-space: normal;
+            padding: 8rpx 0;
           }
-          .price{
+
+          .price {
             margin-top: 14rpx;
-            view{
-              &:first-child{
+
+            view {
+              &:first-child {
                 font-size: 38rpx;
               }
             }
+
             width: 100%;
             align-items: center;
             color:#cf0a2c;
             flex-wrap: nowrap;
-          display: flex;
-          justify-content: space-between;
+            display: flex;
+            justify-content: space-between;
           }
         }
       }
-      
     }
   }
 
 }
-.delete{
+
+.delete {
   height: 100%;
   background-color: #cf0a2c;
   width: 150rpx;
@@ -97,13 +108,15 @@
   white-space: 10rpx;
   border-radius: 20rpx;
 }
-.empty{
+
+.empty {
   margin-top: 120rpx;
-  
 }
+
 .likes {
   padding-bottom: 140rpx;
-  margin-top: 80rpx;
+  margin-top: 100rpx;
+
   .tip {
     width: 100%;
     text-align: center;
@@ -118,48 +131,56 @@
     box-sizing: border-box;
     overflow: hidden;
   }
+
   .like {
     // margin-bottom: 30rpx;
   }
 }
-.haha{
+
+.haha {
   width: 100vw;
   height: 140rpx;
   background-color: #fff;
   box-shadow: 0 -2rpx 4rpx #ddd;
   box-sizing: border-box;
   position: fixed;
-  bottom:150rpx;
+  bottom: 150rpx;
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 0 20rpx;
-  .left{
+
+  .left {
     display: flex;
   }
-  .right{
+
+  .right {
     display: flex;
     align-items: center;
-    .right_top{
+
+    .right_top {
       margin-right: 15rpx;
       display: flex;
       flex-direction: column;
       align-content: center;
-      view{
-        &:first-child{
+
+      view {
+        &:first-child {
           position: relative;
           top: -8rpx;
         }
-        &:last-child{
+
+        &:last-child {
           position: relative;
           top: -13rpx;
-          text{
+
+          text {
             color: #cf0a2c;
             font-size: 40rpx;
           }
         }
       }
- 
+
     }
   }
 }
