@@ -53,11 +53,11 @@
   -webkit-box-orient: vertical;
 }
 .collect .contents .items .list .right .top .tag {
-  background: #cf0a2c;
+  background: linear-gradient(to right bottom, #9e2929, #d63c3c, #781818) !important;
+  border-radius: 6rpx;
   padding: 0 6rpx;
   color: #fff;
   font-size: 24rpx;
-  border-radius: 8rpx;
   margin-right: 7rpx;
 }
 .collect .contents .items .list .right .bottom {

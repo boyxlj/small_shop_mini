@@ -56,11 +56,11 @@
   font-size: 28rpx;
 }
 .box .shop .shopItem .title .tag {
-  background: #cf0a2c;
+  background: linear-gradient(to right bottom, #9e2929, #d63c3c, #781818) !important;
+  border-radius: 6rpx;
   padding: 0 6rpx;
   color: #fff;
   font-size: 24rpx;
-  border-radius: 8rpx;
   margin-right: 7rpx;
 }
 .box .shop .shopItem .price {

@@ -36,7 +36,7 @@
         <view class="shopList" bindtap="tiaoDetail" data-detailId="{{item.detailId}}" wx:for="{{orderList}}" wx:key="detailId">
           <image src="{{item.titleImg}}"></image>
           <view class="right">
-            <view class="title">{{item.title}}</view>
+            <view class="title"><text class="tag" wx:if="{{item.tag}}">{{item.tag}}</text>{{item.title}}</view>
             <!-- <view class="title">{{item.title}}/{{item.descs}}</view> -->
             <view class="price"><text>￥{{item.price}}</text><text>x{{item.num}}</text></view>
           </view>
