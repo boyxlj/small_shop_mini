@@ -11,6 +11,7 @@ Page({
 
   onChange(event) {
     // console.log("点击了：",event.detail);
+    
   },
 
   //点击分类
@@ -30,28 +31,27 @@ Page({
     this.setData({
       categoryList: res.data,
     });
+    // console.log(res.data);
     this.getCategoryShop( res.data[0].detailId)
   },
   //查询分类下的商品
   async getCategoryShop(detailId) {
+    if(this.activeKey==detailId) return
     wx.showLoading({
       title: '加载中',
     })
     const obj = {detailId,pageOn:this.data.pageOn,pageCount:this.data.pageCount}
     const {data:res} = await CategoryShop(obj) 
-    // console.log(res);
     if (res.code != 200){
     this.setData({
       shopList:[]
     })
-    //  wx.showToast({
-    //   title: "服务异常,请稍后尝试",
-    //   icon: "none",
-    // })
     wx.hideLoading()
     return
   }
   wx.hideLoading()
+ const findIndex =  this.data.categoryList?.findIndex(item=>item.detailId==detailId)
+  this.setData({activeKey:findIndex})
     this.setData({
       shopList:res.data
     })
@@ -76,10 +76,16 @@ Page({
   /**
    * 生命周期函数--监听页面显示
    */
-  onShow() {
+  onShow(e) {
     this.getTabBar().setData({
       value: 1,
     });
+    const detailId = wx.getStorageSync('detailId')
+    if(detailId){
+      console.log(detailId);
+      this.getCategoryShop(detailId)
+      wx.removeStorageSync('detailId')
+    }
   },
 
   /**

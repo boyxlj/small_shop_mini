@@ -25,6 +25,13 @@ Component({
       wx.navigateTo({
         url: `/pages/detail/detail?detailId=${detailId}`,
       })
+    },
+    navigateCategory(e){
+      const detailId = e.currentTarget.dataset.detailid
+      wx.setStorageSync('detailId', detailId)
+      wx.switchTab({
+        url: `/pages/category/category`,
+      })
     }
 
   }

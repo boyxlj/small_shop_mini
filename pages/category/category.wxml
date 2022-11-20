@@ -1,7 +1,7 @@
 <view class="category">
   <view class="left">
-    <van-sidebar  active-key="{{ activeKey }}" bind:change="onChange">
-      <van-sidebar-item  bindtap="cateGoryName" data-detailId = "{{item.detailId}}" wx:for="{{categoryList}}" wx:key="detailId" title="{{item.categoryName}}" />
+    <van-sidebar class="sidebar"  active-key="{{ activeKey }}" bind:change="onChange">
+      <van-sidebar-item   bindtap="cateGoryName" data-detailId = "{{item.detailId}}" wx:for="{{categoryList}}" wx:key="detailId" title="{{item.categoryName}}" />
     </van-sidebar>
   </view>
   <view class="right">
